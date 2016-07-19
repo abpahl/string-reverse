@@ -6,8 +6,7 @@ def main():
     i = 0
     while i < length:
         last_letter = input_string[length-1]
-        # take the left ith characters, then add the last letter, then add the right most characters
-        input_string = input_string[:i] + last_letter + input_string[:length-1-i]
+        input_string = input_string[:i] + last_letter + input_string[i:length-1]
         print(input_string)
         i += 1
     print(input_string)
